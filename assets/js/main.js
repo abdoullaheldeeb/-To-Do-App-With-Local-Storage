@@ -90,18 +90,6 @@ function addElementsToPageFrom(arrayOFTasks){
     });
 
 }
-// Append Button clear All
-let clearAllBtn = document.createElement("button");
-clearAllBtn.className = "del";
-clearAllBtn.appendChild(document.createTextNode("AllDelete"));
-container.appendChild(clearAllBtn)
-// clear All Btn
-clearAllBtn.onclick = function () {
-    arrayOFTasks = []; 
-    localStorage.removeItem("tasks"); 
-    tasksDiv.innerHTML = ""; 
-    clearAllBtn.remove();
-};
 
 function addDateToLocalStorageFrom(arrayOFTasks){
     window.localStorage.setItem("tasks", JSON.stringify(arrayOFTasks));
@@ -139,4 +127,17 @@ function toggleStatusTaskWith(taskId) {
     }
     addDateToLocalStorageFrom(arrayOFTasks);
 }
+
+// Append Button clear All
+let clearAllBtn = document.createElement("button");
+clearAllBtn.className = "del";
+clearAllBtn.appendChild(document.createTextNode("AllDelete"));
+container.appendChild(clearAllBtn)
+// clear All Btn
+clearAllBtn.onclick = function () {
+    arrayOFTasks = []; 
+    localStorage.removeItem("tasks"); 
+    tasksDiv.innerHTML = ""; 
+    clearAllBtn.remove();
+};
 
