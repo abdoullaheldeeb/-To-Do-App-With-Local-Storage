@@ -1,0 +1,74 @@
+.container{
+    width: 80%;
+    height: 100%;
+    padding: 30px 30px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+.container .form{
+    width: 100%;
+    background-color:aliceblue;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+.container .form .input{
+    width: 100%;
+    background-color:#fff;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 5px;
+}
+.container .form .add{
+    background-color:red;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.container .tasks{
+    width: 100%;
+    background-color:aliceblue;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.container .tasks .task{
+    background-color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container  .del{
+    background-color:red;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container .tasks .task.done{
+ background-color:bisque;
+}
+.container .tasks .task:hover{
+ background-color:aquamarine;
+}
